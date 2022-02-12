@@ -11,7 +11,13 @@
     <!-- CODE FOR NAVBAR  -->
     <nav>
       <div class="logo"><p>Healthyblood.in</p></div>
-      <ul>
+      <button id="toggle-btn" onclick="togglefun()">
+        <img
+          src="{{url_for('static',filename='toggle-btn.png')}}"
+          alt="toggle"
+        />
+      </button>
+      <ul id="navbar">
         <li><a href="#">Home</a></li>
         <li><a href="#">Book appointment</a></li>
         <li><a href="#">About us</a></li>
@@ -72,6 +78,17 @@
         </p>
         <a href="#"><button>Click Here</button></a>
       </div>
+
+      <script>
+        function togglefun() {
+          var x = document.getElementById("navbar");
+          if (x.style.display === "none") {
+            x.style.display = "flex";
+          } else {
+            x.style.display = "none";
+          }
+        }
+      </script>
     </div>
   </body>
 </html>
