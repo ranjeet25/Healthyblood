@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:ital,wght@0,400;1,500&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap");
+
+/* #FF5C8D #FDEFF4 #FFC0D3 #FF5C8D */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  transition: all 0.3 linear;
+}
+/* ---------- CSS FOR NAVBAR ---------- */
+
+nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  background-color: #ff5c8d;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  background-color: none;
+  width: 35%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+nav li {
+  display: inline;
+  background-color: none;
+  width: 150px;
+
+  text-align: center;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #f7f7f7;
+  font-family: "DM Sans", sans-serif;
+  transition: 0.15s ease-in;
+  font-size: 0.8rem;
+  margin-bottom: 2px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+nav li a:hover {
+  font-size: 0.9rem;
+  color: #fff5f5;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+.logo {
+  padding: 20px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.6rem;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+/* ---------- CSS FOR INTRO PAGE ---------- */
+
+.row {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 0 0 100px;
+}
+.col-1 {
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 50px;
+}
+
+.col-1 h2 {
+  font-size: 3.5rem;
+  color: #707070;
+  font-weight: 100;
+  margin: 20px 0 10px;
+}
+.col-1 h4 {
+  font-size: 1.2rem;
+  color: #252525;
+  font-weight: 200;
+  margin: 20px 0 10px;
+}
+
+.col-1 button {
+  width: 140px;
+  border: 0;
+  padding: 12px 10px;
+  margin-top: 20px;
+  outline: none;
+  color: #fff;
+  background: linear-gradient(to right, #fb5283, #f33527);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: width 0.5s;
+}
+
+.col-1 button img {
+  width: 30px;
+  display: none;
+}
+
+.col-1 button:hover img {
+  display: block;
+}
+.col-1 button:hover {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.col-1::after {
+  content: "";
+  width: 3px;
+  height: 95%;
+  background: linear-gradient(#ff469f, #ff6062);
+  position: absolute;
+  left: -40px;
+  top: 30px;
+}
+.col-2 {
+  position: relative;
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: none;
+}
+
+.col-2 img {
+  width: 600px;
+  height: 600px;
+}
+
+/* CARD SECTION */
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #ff469f, #ff5c8d);
+}
+
+.box {
+  width: 300px;
+  height: 320px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+
+  margin: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+#box1 {
+  position: relative;
+  top: -120px;
+}
+#box3 {
+  position: relative;
+  top: 120px;
+}
+#box4 {
+  position: relative;
+  top: 240px;
+}
+.box h3 {
+  font: 35px;
+  padding: 20px;
+  color: #444;
+}
+
+.box p {
+  font-size: 15px;
+  color: #777;
+}
+
+.box button {
+  padding: 8px 12px;
+  margin-top: 20px;
+}
+
+/* MEEEEEDDDDIIIIIIIAAAAAA QQQQUUUUUEEERRRRYYYYYYY */
+
+@media only screen and (max-width: 700px) {
+  .intro-page {
+    height: 120vh;
+    background: #fdeff4;
+    margin: 0;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 180px 0;
+  }
+
+  .col-2 {
+    flex-basis: 100%;
+    margin-bottom: 50px;
+  }
+
+  .color-box {
+    transform: translate(75px);
+  }
+  .col-1 {
+    flex-basis: 100%;
+  }
+  .col-1 h2 {
+    font-size: 2rem;
+    padding: 5px;
+  }
+  .col-1 h4 {
+    font-size: 1rem;
+    padding: 5px;
+  }
+  .col-1 button {
+    padding: 10px;
+  }
+
+  .col-2 img {
+    width: 400px;
+    height: 400px;
+  }
+
+  /* CARD SECTION */
+  .container {
+    width: 100vw;
+    height: 200%;
+    position: absolute;
+    top: 160vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fdeff4;
+  }
+
+  .box {
+    width: 300px;
+    height: 320px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+
+    margin: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    z-index: 0;
+  }
+  .box:hover {
+    box-shadow: rgba(149, 157, 165, 0.034) 0px 8px 24px;
+  }
+  #box1 {
+    position: relative;
+    top: 0px;
+  }
+  #box3 {
+    position: relative;
+    top: 0px;
+  }
+  #box4 {
+    position: relative;
+    top: 0px;
+  }
+}

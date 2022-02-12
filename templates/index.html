@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}" />
+    <title>Blood test</title>
+  </head>
+  <body>
+    <!-- CODE FOR NAVBAR  -->
+    <nav>
+      <div class="logo"><p>Healthyblood.in</p></div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Book appointment</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Admin login</a></li>
+      </ul>
+    </nav>
+
+    <!-- CODE FOR INTRO PAGE -->
+
+    <div class="row">
+      <div class="col-1">
+        <h2>Every Blood Donor <br />Is a live saver!</h2>
+        <h4>
+          A drop of blood can save a life! Don't waste it and donate blood.
+        </h4>
+
+        <button type="button">
+          Blood Bank<img
+            src="{{url_for('static',filename='arrow.png')}}"
+            alt="Blood Bank"
+          />
+        </button>
+      </div>
+
+      <div class="col-2">
+        <img
+          src="{{url_for('static',filename='Blood test-pana.png')}}"
+          class="blood"
+        />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="box" id="box1">
+        <h3>Card</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+          accusamus sed saepe dolor ipsa soluta distinctio perferendis, facere
+          totam veniam?
+        </p>
+        <a href="#"><button>Click Here</button></a>
+      </div>
+      <div class="box" id="box2">
+        <h3>Card</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+          accusamus sed saepe dolor ipsa soluta distinctio perferendis, facere
+          totam veniam?
+        </p>
+        <a href="#"><button>Click Here</button></a>
+      </div>
+      <div class="box" id="box3">
+        <h3>Card</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+          accusamus sed saepe dolor ipsa soluta distinctio perferendis, facere
+          totam veniam?
+        </p>
+        <a href="#"><button>Click Here</button></a>
+      </div>
+    </div>
+  </body>
+</html>
