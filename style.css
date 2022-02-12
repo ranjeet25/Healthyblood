@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:ital,wght@0,400;1,500&family=Raleway&display=swap");
+
+/* #FF5C8D #FDEFF4 #FFC0D3 #FF5C8D */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* ---------- CSS FOR NAVBAR ---------- */
+
+nav {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 80px;
+  background-color: #ff5c8d;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  background-color: none;
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+nav li {
+  display: inline;
+  background-color: none;
+  width: 150px;
+
+  text-align: center;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #f7f7f7;
+  font-family: "DM Sans", sans-serif;
+  transition: 0.15s ease-in;
+  font-size: 0.8rem;
+  margin-bottom: 2px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+nav li a:hover {
+  font-size: 0.9rem;
+  color: #fff5f5;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+.logo {
+  padding: 20px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.6rem;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+/* ---------- CSS FOR INTRO PAGE ---------- */
+
+.intro-page {
+  height: 80vh;
+  background: #fdeff4;
+}
