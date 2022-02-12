@@ -12,7 +12,7 @@ nav {
   position: absolute;
   top: 0;
   width: 100vw;
-  height: 80px;
+  height: 10vh;
   background-color: #ff5c8d;
 
   display: flex;
@@ -23,7 +23,7 @@ nav {
 nav ul {
   background-color: none;
   width: 35%;
-  height: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,6 +62,113 @@ nav li a:hover {
 /* ---------- CSS FOR INTRO PAGE ---------- */
 
 .intro-page {
-  height: 80vh;
+  height: 100vh;
   background: #fdeff4;
+}
+
+.row {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 0;
+}
+.col-1 {
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 50px;
+}
+
+.col-1 h2 {
+  font-size: 54px;
+  color: #707070;
+  font-weight: 100;
+  margin: 20px 0 10px;
+}
+.col-1 p {
+  font-size: 16px;
+  color: #b7b7b7;
+  font-weight: 100;
+}
+.col-1 h4 {
+  margin: 30px 0;
+  font-size: 20px;
+}
+
+button {
+  width: 140px;
+  border: 0;
+  padding: 12px 10px;
+  outline: none;
+  color: #fff;
+  background: linear-gradient(to right, #fb5283, #f33527);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: width 0.5s;
+}
+
+button img {
+  width: 30px;
+  display: none;
+}
+
+button:hover img {
+  display: block;
+}
+button:hover {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.col-1::after {
+  content: "";
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(#ff469f, #ff6062);
+  position: absolute;
+  left: -40px;
+  top: 8px;
+}
+.col-2 {
+  position: relative;
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: none;
+}
+
+.col-2 img {
+  width: 600px;
+  height: 600px;
+}
+
+@media only screen and (max-width: 700px) {
+  .row {
+    flex-direction: column-reverse;
+    margin: 180px 0;
+  }
+  .col-2 {
+    flex-basis: 100%;
+    margin-bottom: 50px;
+  }
+
+  .color-box {
+    transform: translate(75px);
+  }
+  .col-1 {
+    flex-basis: 100%;
+  }
+  .col-1 h2 {
+    font-size: 35px;
+  }
+  .col-1 h3 {
+    font-size: 15px;
+  }
+
+  .col-2 img {
+    width: 400px;
+    height: 400px;
+  }
 }
